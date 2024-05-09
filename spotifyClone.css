@@ -1,0 +1,971 @@
+:root {
+    /* --bgColor : #101010; */
+    --boxColorDD: #121212;
+    --boxColorD: rgb(45, 44, 44);
+    --boxColorL: rgb(70, 69, 69);
+    --greyFontColor: rgb(179, 179, 179);
+    --whiteFontColor: rgb(255, 255, 255);
+}
+
+svg {
+    transition: all .2s ease-in-out;
+}
+
+.play:hover {
+    width: 52px;
+    height: 52px;
+    background-color: #20e869;
+}
+
+
+
+.play {
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 139px;
+    right: 19px;
+    width: 50px;
+    height: 50px;
+    border: solid #1fdf64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1fdf64;
+    border-radius: 50%;
+}
+
+.bL2_3 button:hover {
+    border-color: var(--whiteFontColor);
+}
+
+.bLeft button:hover {
+    cursor: pointer;
+    font-size: .925rem;
+}
+
+.font16 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.font14 {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+body {
+    background-color: black;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: sans-serif;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bRight {
+    position: relative;
+    border-radius: 10px;
+    /* background-color: var(--boxColorDD); */
+    width: calc(97.8vw - 330px);
+    background: linear-gradient(to bottom, #1e1e1e, var(--boxColorDD));
+}
+
+.bLeft span {
+    transition: all .2s ease-in-out;
+}
+
+.bLeft {
+    /* z-index: 5; */
+    /* position: relative; */
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: black;
+    width: 330px;
+    height: 100vh;
+}
+
+.bL1_ {
+    #crossBt {
+        position: relative;
+        left: 65%;
+        display: none;
+        /* opacity: 1; */
+    }
+
+    /* display: flex; */
+    margin-left: 20px;
+    /* justify-content: center; */
+    gap: 10px;
+    width: 100%;
+    height: 46.5px;
+    /* height: 20px; */
+}
+
+.bL1_1 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5px;
+}
+
+.bL1_2 {
+    /* padding-top: 10px; */
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    font-weight: 600;
+}
+
+.bL1_2 div {
+    /* padding-top: 10px; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.bL1 {
+    border-radius: 10px;
+    /* font-size: 16px; */
+    font-weight: 400;
+    background-color: var(--boxColorDD);
+    color: var(--whiteFontColor);
+}
+
+.bL1_3 a div {
+    /* padding-bottom: 15px; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* font-weight: 600; */
+    /* color: var(--greyFontColor); */
+}
+
+.bL1_3 {
+
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    color: var(--greyFontColor);
+}
+
+.bLeft span:hover {
+    color: var(--whiteFontColor);
+    cursor: pointer;
+    /* fill: var(--whiteFontColor); */
+}
+
+
+.navBar svg {
+    fill: var(--greyFontColor);
+
+}
+
+.bLeft svg:hover {
+    fill: var(--whiteFontColor);
+    cursor: pointer;
+
+}
+
+#hambg {
+    display: none;
+}
+
+.navBar svg:hover {
+    cursor: not-allowed;
+}
+
+.navBar {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #101010;
+    width: 100%;
+    /* width: calc(97.8vw - 335px); */
+    height: 66px;
+}
+
+.btnR {
+    margin-left: 18px;
+    display: flex;
+    gap: 10px;
+    color: var(--greyFontColor);
+}
+
+.btnL {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btnL1:hover {
+    cursor: pointer;
+    color: var(--whiteFontColor);
+}
+
+.btnL2:hover {
+    cursor: pointer;
+    margin-left: -.15rem;
+    font-size: 1.05rem;
+    background-color: rgb(245, 243, 243);
+}
+
+.btnL1 {
+    border: solid var(--boxColorDD);
+    background-color: var(--boxColorDD);
+    /* background-color: #101010; */
+    color: var(--greyFontColor);
+    font-weight: 500;
+    /* font-size: 16px; */
+}
+
+.btnL2 {
+    font-weight: 700;
+    /* font-size: 16px; */
+    background-color: var(--whiteFontColor);
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.bL2_1_1 {
+    display: flex;
+    align-items: center;
+    color: var(--greyFontColor);
+    /* background-color: red; */
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bL2 {
+
+    border-radius: 10px 10px 0 0;
+    /* margin-top: 25px; */
+    background-color: var(--boxColorDD);
+    /* background-color: red; */
+    height: 46.5px;
+}
+
+.bL2_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bL2_1_2 {
+    margin-right: 45px;
+    background-color: var(--boxColorDD);
+    border: 2px solid var(--boxColorDD);
+}
+
+.bL2_2 {
+    overflow: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    background-color: #121212;
+    /* background-color: red; */
+    height: 200px;
+    width: 100%;
+    /* margin: 8px 0px; */
+    /* padding: 16px 20px; */
+    margin-bottom: -60px;
+}
+
+.songLib ul li:hover {
+    color: var(--whiteFontColor);
+    cursor: pointer;
+}
+
+.songLib {
+
+    color: var(--greyFontColor);
+}
+
+.songLib ul {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-type: none;
+}
+
+.sec {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 16px 20px;
+    line-height: 28px;
+    background-color: #242424;
+    width: 85%;
+    /* height: 150px; */
+    border-radius: 10px;
+}
+
+.t1 {
+    color: var(--whiteFontColor);
+}
+
+.t2 {
+    font-weight: 100;
+    color: var(--whiteFontColor);
+}
+
+.sec1 {
+    margin-top: 10px;
+}
+
+.sec2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec button {
+    margin: 10px 0 5px 0;
+    border-radius: 30px;
+    font-weight: 700;
+    border: 2px solid #242424;
+    padding: 9px 18px;
+    background-color: white;
+}
+
+.bL2_3 {
+    background-color: var(--boxColorDD);
+    width: 100%;
+    height: 300px;
+
+    /* margin: 0; */
+
+}
+
+.linkBoxL div {
+    cursor: pointer;
+}
+
+.linkBoxL {
+    padding-top: 40px;
+    background-color: var(--boxColorDD);
+    margin: 40px 20px 0 20px;
+
+    /* justify-content: flex-start; */
+    row-gap: 16px;
+    color: var(--greyFontColor);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 34px;
+    /* row-gap: px; */
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.bL2_3 button {
+    margin: 35px 0 0 20px;
+    display: flex;
+    justify-self: center;
+    gap: 5px;
+    font-weight: 700;
+    color: var(--whiteFontColor);
+    background-color: var(--boxColorDD);
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 6px 11px;
+}
+
+.showAllBt:hover {
+    text-decoration: underline;
+}
+
+.title :hover {
+    text-decoration: underline;
+}
+
+.title {
+    color: var(--whiteFontColor);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.showAllBt {
+    color: var(--greyFontColor);
+    font-weight: 700;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+}
+
+.bigCardBox {
+    margin: 0 24px;
+    margin-top: 10px;
+    /* width: 95%; */
+    /* margin-bottom: 40px; */
+}
+
+.bigCard {
+    margin-bottom: 20px;
+}
+
+.scBox {
+    width: 100%;
+    display: flex;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+body a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sc:hover {
+    cursor: pointer;
+    background-color: #242424;
+
+    .play {
+        opacity: 10;
+        top: 129px;
+        cursor: pointer;
+    }
+}
+
+.sc {
+    position: relative;
+    margin-bottom: 35px;
+    /* border: 2px solid wheat; */
+    border-radius: 10px;
+    padding: 5px 11px 10px 11px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+    gap: 7px;
+    /* width: 204px; */
+    /* height: 280px; */
+}
+
+.scTitle {
+    font-size: 1rem;
+    color: var(--whiteFontColor);
+    font-weight: 400;
+}
+
+.scDesp {
+    font-size: .875rem;
+    /* display: inline-block; */
+    overflow: hidden;
+    width: 172px;
+    height: 35px;
+    /* font-size: 14px; */
+    font-weight: 400;
+    color: var(--greyFontColor);
+}
+
+.scPic {
+    width: 184px;
+    height: 184px;
+}
+
+.sc img {
+    border-radius: 6px;
+    width: 100%;
+    /* height: 184px; */
+}
+
+.gl a:hover {
+    color: var(--whiteFontColor);
+    text-decoration: underline;
+}
+
+.gl {
+    width: 194px;
+    /* margin-left: 10px; */
+}
+
+.gl ul {
+    list-style: none;
+    /* row-gap: 20px; */
+}
+
+.gl ul li {
+    margin-bottom: 12px;
+}
+
+.generalLinks {
+    /* width: 400px; */
+
+    display: flex;
+    color: var(--greyFontColor);
+}
+
+.gl p {
+    font-weight: 700;
+    color: var(--whiteFontColor);
+}
+
+.socialLinks {
+    margin-right: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.sl svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--whiteFontColor);
+}
+
+.sl a:hover {
+    cursor: default;
+    background-color: var(--boxColorL);
+}
+
+.sl a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--boxColorD);
+    border-radius: 50px;
+}
+
+.linkBoxR {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    margin: auto;
+    /* margin-bottom: 30px; */
+    margin-top: 30px;
+    background-color: var(--boxColorD);
+    width: 94%;
+    height: 1px;
+}
+
+.cpRight {
+    margin: 50px calc((6%)/2);
+    /* margin-left: 24px; */
+    color: var(--greyFontColor);
+}
+
+.control button:hover {
+    svg {
+        fill: black;
+    }
+
+    background-color: #20e869;
+}
+
+.control button {
+    /* padding: 0; */
+    /* width: 50px;
+    height: 30px; */
+    border: solid #1fdf64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1fdf64;
+    /* border-radius: 50%; */
+}
+
+.details {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sidePlayCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidePlayCard svg:hover {
+    fill: none;
+}
+
+.playbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.M {
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 0; */
+    /* gap: 10px; */
+    /* justify-content: center; */
+    background-color: var(--boxColorDD);
+    /* background-color: green; */
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+    height: 80px;
+}
+
+.pbControls button:hover {
+    svg {
+        fill: var(--whiteFontColor);
+    }
+
+    cursor: pointer;
+}
+
+.playPause button:hover {
+    svg {
+        fill: black;
+    }
+
+}
+
+.pbControls svg {
+    transition: all 0s ease;
+}
+
+.pbControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prev button {
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--greyFontColor);
+    }
+
+    background-color: inherit;
+    border: 2px solid var(--boxColorDD);
+}
+
+.playPause button {
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: black;
+    }
+
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+    border: solid white;
+}
+
+.next button {
+    svg {
+        width: 18x;
+        height: 18px;
+        fill: var(--greyFontColor);
+
+    }
+
+    background-color: inherit;
+    border: 2px solid var(--boxColorDD);
+}
+
+.songControl {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.pbBottomSec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--greyFontColor);
+}
+
+.seekbar:hover {
+    #curPos {
+        background-color: #1fdf64;
+    }
+
+    .circle {
+        cursor: pointer;
+        opacity: 1;
+    }
+}
+
+.seekbar {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 4px;
+    background-color: var(--boxColorL);
+    border-radius: 10px
+}
+
+#curPos {
+    transition: all .3s ease-in-out;
+    border-radius: inherit;
+    background-color: var(--whiteFontColor);
+    height: 100%;
+    width: 0%;
+}
+
+.circle {
+    opacity: 0;
+    position: relative;
+    left: -1%;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.songInfo {
+    /* background-color: white; */
+    width: 14%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.R {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 15%;
+}
+#volPos{
+    transition: all .3s ease-in-out;
+}
+.volume {
+    /* transition: all .3s ease-in-out; */
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 4px;
+    background-color: var(--boxColorL);
+    /* background-color: white; */
+    border-radius: 10px
+}
+
+#volPos {
+    border-radius: inherit;
+    background-color: var(--whiteFontColor);
+    height: 100%;
+    width: 0%;
+}
+
+.volCircle {
+    opacity: 0;
+    position: relative;
+    left: -1%;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.volume:hover {
+    #volPos {
+        background-color: #1fdf64;
+    }
+
+    .volCircle {
+        cursor: pointer;
+        opacity: 1;
+    }
+}
+
+.songName {
+    font-size: 14px;
+}
+
+.artist {
+    color: var(--greyFontColor);
+    font-size: 12px;
+}
+
+.sText {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.hover-effect {
+
+    opacity: 10;
+    top: 129px;
+    /* cursor: pointer; */
+
+}
+@media (max-width: 1000px) {
+    .scBox{
+        position: relative;
+        right: 12px;
+    }
+    .bL2_2{
+        height: 500px;
+    }
+    .playbar {
+        justify-content: center;
+    }
+
+    .songInfo {
+        width: 40%;
+
+        .pic {
+            display: none;
+        }
+
+        .artist {
+            display: none;
+        }
+
+        justify-content: center;
+    }
+
+    .M {
+        border-radius: 10px;
+        margin: 10px 20px;
+        /* padding: 10px 20px 10px 20px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        /* gap: 10px; */
+        /* justify-content: center; */
+        background-color: var(--boxColorD);
+        /* background-color: #032030; */
+        position: fixed;
+        bottom: 0;
+        width: 80vw;
+        height: 165px;
+    }
+
+    .pbBottomSec {
+        width: 200%;
+    }
+
+    #crossBt {
+        opacity: 10;
+        display: block;
+    }
+
+    .scTitle {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .scDesp {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    #hambg {
+        display: block;
+    }
+
+    body {
+        /* background-color: yellowgreen; */
+    }
+
+    .navBar {
+        /* position: fixed; */
+        margin: 0;
+    }
+
+    .bLeft {
+        z-index: 20;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: -100vw;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .play {
+        right: 35vw;
+        top: 289px;
+        width: 66px;
+        height: 66px;
+
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .sc:hover {
+        cursor: pointer;
+        background-color: #242424;
+
+        .play {
+            opacity: 10;
+            top: 279px;
+            cursor: pointer;
+        }
+    }
+
+    .play:hover {
+        width: 68px;
+        height: 68px;
+        background-color: #20e869;
+    }
+
+    .sc {
+        width: 85vw;
+        /* height: 0vh; */
+    }
+
+    .scPic {
+        width: 100%;
+        height: 85vw;
+    }
+
+    .scPic img {
+        width: 100%;
+    }
+
+    .bRight {
+        width: 100vw;
+    }
+
+    .scBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 10px; */
+        /* flex-wrap: wrap; */
+        margin-top: 10px;
+    }
+
+}
